@@ -10,7 +10,7 @@ from maze_generator import MazeGenerator
 
 def main():
     pygame.init()
-    dims = Vec2(30, 20)
+    dims = Vec2(240, 160)
     window = pygame.display.set_mode((dims.x * square_size, dims.y * square_size))
     grid = Grid(dims, window)
     pygame.display.set_caption("Maze")
@@ -38,7 +38,7 @@ def main():
             draw_cell(window, maze_generator.current_cell(), colors.red)
 
         pygame.display.update()
-        clock.tick(60)
+        # clock.tick(60)
 
     pygame.quit()
 
